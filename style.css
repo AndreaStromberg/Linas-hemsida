@@ -1,0 +1,81 @@
+:root {
+  --light-beige: #f5f3e9;
+  --darker-beige: #eee9dd;
+  --dark-grey: #3a3a32;
+  --dark-green: #4b6043;
+  --mustard-yellow: #c46a33;
+}
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+
+  /* motverkar luddighet på texten i olika webbläsare */
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+html,
+body {
+  /* background-image: url("images/bakgrundsbild.jpg");  */
+
+  background: linear-gradient(rgba(47, 58, 46, 0.7), rgba(47, 58, 46, 0.7)),
+    url(images/bakgrundsbild.jpg);
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 5rem;
+  .logotype {
+    font-family: "Uncial Antiqua", system-ui;
+    font-size: 2rem;
+    color: var(--mustard-yellow);
+  }
+
+  .menu__menulist {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+    color: var(--light-beige);
+
+    .menu__list-item--current {
+      color: var(--mustard-yellow);
+    }
+  }
+}
+
+.container {
+  margin-top: 100px;
+  min-height: 510rem;
+  min-width: 70rem;
+
+  background-color: var(--light-beige);
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
