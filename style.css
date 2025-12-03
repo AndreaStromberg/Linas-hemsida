@@ -18,10 +18,10 @@
 
 html,
 body {
-  /* background-image: url("images/bakgrundsbild.jpg");  */
+  background-image: url("images/bakgrundsbild.jpg");
 
-  background: linear-gradient(rgba(47, 58, 46, 0.7), rgba(47, 58, 46, 0.7)),
-    url(images/bakgrundsbild.jpg);
+  /* background: linear-gradient(rgba(47, 58, 46, 0.7), rgba(47, 58, 46, 0.7)),
+    url(images/bakgrundsbild.jpg); */
 
   background-size: cover;
 
@@ -76,6 +76,7 @@ img {
   min-width: 70rem;
 
   background-color: var(--light-beige);
+  opacity: 80%;
   margin-right: 5rem;
   margin-left: 5rem;
 }
