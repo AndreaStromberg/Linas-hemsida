@@ -193,11 +193,19 @@ img {
   opacity: 30%; */
 
   display: flex;
-  padding: 3rem;
+  flex-wrap: wrap;
+  padding: 5rem 3rem;
   gap: 3rem;
 
   .card {
     background-color: var(--light-beige);
     /* opacity: 0%; */
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 18rem;
+
+    .card__content {
+      padding: 1rem;
+    }
   }
 }
