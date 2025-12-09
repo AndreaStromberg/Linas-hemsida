@@ -209,3 +209,69 @@ img {
     }
   }
 }
+
+.projects {
+  .projects__heading,
+  .projects__description {
+    color: var(--light-beige);
+    margin-left: 3rem;
+  }
+  .project__cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .project__card {
+    background-color: var(--light-beige);
+    /* display: flex;
+    flex-direction: column;
+    flex: 4 1 1;
+    align-items: center;
+    justify-content: space-between; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 2fr 1fr;
+
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 10px;
+
+    .project__card__image {
+      max-width: 20rem;
+      border-radius: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  color: var(--light-beige);
+  background-color: var(--mustard-yellow);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  justify-content: start;
+  /* gap: 2rem; */
+  line-height: 1.5rem;
+}
+
+.footer__contact__email {
+  color: var(--light-beige);
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+}
+
+.fa-instagram {
+  color: var(--light-beige);
+  /* vertical-align: baseline; */
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
