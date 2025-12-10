@@ -194,7 +194,17 @@ a {
   }
 }
 
+.above-backgroundforest {
+  height: 150px;
+  background-color: var(--light-beige);
+
+  width: 100%;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 35% 25%, 0px 100%);
+}
+
 .backgroundforest {
+  margin-top: -150px;
+  padding-top: 150px;
   background-image: url("images/bakgrundsbild.jpg");
 
   /* background: linear-gradient(rgba(47, 58, 46, 0.7), rgba(47, 58, 46, 0.7)),
@@ -258,14 +268,15 @@ a {
   .projects__intro {
     background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: overlay;
-    /* border-radius: 10px; */
+    border-radius: 10px;
+    /* box-shadow: 12px 12px 2px 1px rgb(255 255 255 / 0.2); */
     max-width: 20rem;
     margin-left: 3rem;
     padding: 0 1rem;
   }
 
-  .projects__intro__inner {
-  }
+  /* .projects__intro__inner {
+  } */
 
   .projects__heading,
   .projects__description {
