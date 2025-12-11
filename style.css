@@ -4,7 +4,8 @@
   /* --dark-grey: #3a3a32; */
   --dark-grey: #111;
   --dark-green: #4b6043;
-  --mustard-yellow: #c46a33;
+  /* --mustard-yellow: rgb(185, 106, 51); */
+  --mustard-yellow: #b36b00;
 
   --font-headings: "Cormorant Garamond", serif;
   --font-paragraphs: "Lato", sans-serif;
