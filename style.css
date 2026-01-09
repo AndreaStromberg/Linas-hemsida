@@ -5,9 +5,10 @@
   --dark-grey: #111;
   --dark-green: #4b6043;
   /* --mustard-yellow: rgb(185, 106, 51); */
-  --mustard-yellow: #b36b00;
+  /* --mustard-yellow: #b36b00; */
+  --mustard-yellow: #c46a33;
 
-  --font-headings: "Cormorant Garamond", serif;
+  --font-headings: "Lato", sans-serif;
   --font-paragraphs: "Lato", sans-serif;
 }
 
@@ -115,7 +116,10 @@ a {
   height: 100px;
   padding: 0 5rem;
   .logotype {
-    font-family: "Uncial Antiqua", system-ui;
+    /* font-family: "Ga Maamli", sans-serif; */
+    /* font-family: "Great Vibes", cursive; */
+    font-family: "Mynerve", cursive;
+
     font-size: 3rem;
     color: var(--mustard-yellow);
   }
