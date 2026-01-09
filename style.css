@@ -41,7 +41,7 @@ img {
 h1 {
   font-family: var(--font-headings);
   font-size: 3.5rem;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
   font-weight: 600;
 }
 
@@ -68,8 +68,8 @@ p {
 
 a {
   font-family: var(--font-headings);
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
   text-decoration: none;
   font-weight: 500;
 }
@@ -129,13 +129,38 @@ a {
     gap: 2rem;
     list-style: none;
     text-decoration: none;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Lato", sans-serif;
     font-size: 1.25rem;
     color: var(--dark-grey);
 
     .menu__list-item--current {
       color: var(--mustard-yellow);
       font-weight: 900;
+    }
+
+    .menu__list-item--expandable {
+      position: relative;
+    }
+
+    .menu__sub {
+      display: none;
+      position: absolute;
+      top: 100%;
+      list-style: none;
+      background-color: var(--light-beige);
+      margin-left: 0;
+      padding-left: 0;
+
+      .menu__sub__list-item {
+        white-space: nowrap;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    .menu__list-item--expandable:hover {
+      .menu__sub {
+        display: block;
+      }
     }
   }
 }
@@ -155,8 +180,11 @@ a {
 
 .ingress {
   padding-top: 5rem;
-  height: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  height: 25rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -164,6 +192,15 @@ a {
 
   h1 {
     color: var(--light-beige);
+  }
+
+  .ingress__text {
+    margin: 0;
+    color: var(--light-beige);
+    font-size: 2rem;
+    line-height: 3rem;
+    max-width: 75rem;
+    font-style: italic;
   }
 }
 
@@ -179,10 +216,10 @@ a {
   /* background-color: var(--light-beige); */
 
   background-color: var(--dark-green);
-  .gallery__image {
+  /* .gallery__image {
     background-color: var(--light-beige);
     padding: 1rem;
-  }
+  } */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -222,7 +259,7 @@ a {
 .backgroundforest {
   margin-top: -150px;
   padding-top: 150px;
-  background-image: url("images/bakgrundsbild.jpg");
+  background-image: url("images/herobild.jpg");
 
   /* background: linear-gradient(rgba(47, 58, 46, 0.7), rgba(47, 58, 46, 0.7)),
     url(images/bakgrundsbild.jpg); */
@@ -233,7 +270,7 @@ a {
 
   margin-bottom: 150px;
   /* background-blend-mode: var(--mustard-yellow); */
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.25);
   background-blend-mode: overlay;
 }
 
