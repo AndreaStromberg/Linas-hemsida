@@ -2,9 +2,7 @@ const expandableMenu = () => {
   // Hämta in element från DOM
   const menuButton = document.querySelector(".hamburger-menu")
   const expandedMenu = document.querySelector(".hamburgermenu-expanded")
-  const listElementPaGang = document.querySelector(
-    ".hamburgermenu-expanded__listitem--with-sub-menu",
-  )
+  const closeButton = document.querySelector(".close-button")
 
   //Funktioner
   //   Funktion för att toggla utfälld meny
@@ -13,12 +11,14 @@ const expandableMenu = () => {
     expandedMenu.classList.toggle("visible")
   }
 
-  //   Funktion för att toggla utfälld submeny vid på gång
-  const toggleSubMenu = () => {}
+  //   Funktion för att stänga utfälld meny när man trycker på krysset
+  const closeExpandableMenu = () => {
+    expandedMenu.classList.remove("visible")
+  }
 
   // Eventlyssnare
   menuButton.addEventListener("click", toggleExpandableMenu)
-  listElementPaGang.addEventListener("click", toggleSubMenu)
+  closeButton.addEventListener("click", closeExpandableMenu)
 }
 
 expandableMenu()

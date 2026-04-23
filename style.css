@@ -186,9 +186,20 @@ a {
       font-family: "Lato", sans-serif;
       font-size: 1.25rem;
       color: var(--dark-grey);
+      padding: 0.5rem;
       &:hover {
         color: var(--mustard-yellow);
       }
+    }
+
+    .close-item {
+      align-self: flex-end;
+    }
+
+    .close-button {
+      border: none;
+      background: none;
+      font-size: 1.5rem;
     }
 
     display: none;
@@ -201,6 +212,15 @@ a {
       @media screen and (min-width: 780px) {
         display: none;
       }
+    }
+  }
+
+  .hamburgermenu-expanded__submenu-expanded {
+    list-style: none;
+    padding-top: 0.5rem;
+
+    li {
+      padding: 0.5rem;
     }
   }
 
@@ -280,6 +300,47 @@ a {
     line-height: 3rem;
     max-width: 75rem;
     font-style: italic;
+    z-index: 950;
+  }
+
+  @media screen and (max-width: 1080px) {
+    align-items: start;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 3rem 3rem 0 3rem;
+  }
+
+  @media screen and (max-width: 810px) {
+    height: 15rem;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    .ingress__text {
+      font-size: 1.5rem;
+      line-height: 150%;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 10rem;
+
+    h1 {
+      font-size: 1.5rem;
+      line-height: 100%;
+    }
+
+    .ingress__text {
+      font-size: 1rem;
+      line-height: 150%;
+    }
   }
 }
 
