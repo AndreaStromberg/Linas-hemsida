@@ -356,6 +356,10 @@ a {
   clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 75% 50%, 25% 100%, 0px 75%);
 }
 
+.gallery-and-above-background-forest {
+  background-color: var(--dark-green);
+}
+
 .gallery {
   background-color: var(--dark-green);
 
@@ -364,7 +368,7 @@ a {
   /* grid-template-rows: 1fr 1fr; */
 
   gap: 4rem;
-  padding: 15rem 4rem 4rem;
+  padding: 15rem 4rem 10rem;
   margin-top: -7rem;
 
   .gallery__text-area {
@@ -413,8 +417,8 @@ a {
 }
 
 .above-backgroundforest {
+  margin-top: -3rem;
   height: 150px;
-  /* background-color: var(--light-beige); */
   background-color: var(--dark-green);
 
   width: 100%;
@@ -422,7 +426,7 @@ a {
 }
 
 .backgroundforest {
-  margin-top: -150px;
+  margin-top: -149px;
   padding-top: 150px;
   background-image: url("images/herobild.jpg");
 
@@ -490,7 +494,6 @@ a {
 
   .projects__heading {
     display: inline-block;
-    justify-self: flex-start;
     background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: overlay;
     border-radius: 10px;
