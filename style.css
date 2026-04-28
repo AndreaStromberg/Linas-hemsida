@@ -692,6 +692,25 @@ footer {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .om-mig__picture-heading-ingress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+  }
+
+  .om-mig__picture {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .content__om-mig {
+    padding: 2rem 1rem;
+  }
+}
+
 /* ILLUSTRATIONER - UNDERSIDAN */
 
 .illustrationer--outer-container {
