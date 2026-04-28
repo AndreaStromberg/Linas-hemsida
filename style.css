@@ -90,6 +90,7 @@ a {
 .button {
   height: 3rem;
   padding: 0.5rem 1rem;
+  border: 0;
   border-radius: 10px;
   background-color: var(--dark-green);
   color: var(--light-beige);
@@ -713,7 +714,7 @@ footer {
 
 /* ILLUSTRATIONER - UNDERSIDAN */
 
-.illustrationer--outer-container {
+.outer-container {
   background: var(--light-beige);
 }
 
@@ -761,4 +762,71 @@ footer {
   @media screen and (max-width: 500px) {
     padding: 3rem 0.5rem;
   }
+}
+
+/* KONTAKTA MIG - UNDERSIDA */
+.contact-container {
+  margin-top: 100px;
+  padding-inline: 2rem;
+  max-width: 800px;
+  margin-inline: auto;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+
+  gap: 2rem;
+  background-color: var(--light-beige);
+
+  h2 {
+    margin: 0;
+  }
+  p {
+    font-size: 20px;
+    padding: 0 0 3rem;
+    margin: 0;
+  }
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-inputs {
+  width: 350px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 400;
+  font-family: var(--font-paragraphs);
+  color: var(--dark-grey);
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid var(--mustard-yellow);
+}
+
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+  font-family: var(--font-paragraphs);
+}
+
+.contact-right img {
+  max-width: 400px;
+}
+
+.footer__subpage {
+  margin: 0;
 }
