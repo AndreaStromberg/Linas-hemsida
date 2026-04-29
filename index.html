@@ -25,13 +25,15 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Scripts -->
-    <script type="module" src="expandableMenu.js"></script>
+    <script src="expandableMenu.js" defer></script>
+
 </head>
 
 <body>
 
     <header class="site-header">
-        <span class="logotype">Lina Malm</span>
+        <a href="index.html" class="logotype">Lina Malm</a>
+
         <nav class="menu">
             <ul class="menu__menulist">
                 <li class="menu__list-item menu__list-item--current"><a href="index.html">Hem</a></li>
@@ -55,14 +57,12 @@
                         fill="currentColor" />
                 </svg>
 
-
-
             </button>
 
             <ul class="hamburgermenu-expanded">
                 <li class="hamburgermenu-expanded__listitem close-item"><button class="close-button">X</button></li>
                 <li class="hamburgermenu-expanded__listitem"><a href="index.html">Hem</a></li>
-                <li class="hamburgermenu-expanded__listitem"><a href="">Illustrationer</a></li>
+                <li class="hamburgermenu-expanded__listitem"><a href="illustrationer.html">Illustrationer</a></li>
                 <li class="hamburgermenu-expanded__listitem hamburgermenu-expanded__listitem--with-sub-menu">På gång
                     <ul class="hamburgermenu-expanded__submenu-expanded">
                         <li class="menu__sub__list-item"><a href="varldarOchKaraktarer.html">Världar och karaktärer</a>
