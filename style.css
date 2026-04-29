@@ -102,9 +102,18 @@ a {
   align-items: center;
   text-decoration: none;
 
+  &:hover {
+    background-color: var(--darker-beige);
+    color: #c46a33;
+  }
+
   &.button--inverted {
     background-color: var(--light-beige);
     color: var(--dark-grey);
+
+    &:hover {
+      color: var(--mustard-yellow);
+    }
   }
 }
 
@@ -580,10 +589,6 @@ a {
   }
 }
 
-/* .projects {
-  height: 100%;
-} */
-
 .above-footer {
   height: 150px;
   width: 100%;
@@ -611,14 +616,21 @@ footer {
   color: var(--light-beige);
   font-size: 1.5rem;
   margin-right: 1.25rem;
+
+  &:hover {
+    color: #555;
+  }
 }
 
 .fa-instagram {
   color: var(--light-beige);
-  /* vertical-align: baseline; */
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
+
+  &:hover {
+    color: #555;
+  }
 }
 
 /* OM MIG - UNDERSIDAN */
