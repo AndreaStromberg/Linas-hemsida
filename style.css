@@ -839,6 +839,24 @@ footer {
   max-width: 400px;
 }
 
+/* PÅ GÅNG - UNDERSIDOR */
+.pagang-content {
+  min-height: 100px;
+  margin-top: 100px;
+  padding: 5rem 2rem;
+
+  max-width: 60rem;
+  margin-inline: auto;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.pagang-card {
+  width: 250px;
+}
+
 .footer__subpage {
   margin: 0;
 }
