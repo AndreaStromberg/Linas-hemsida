@@ -152,6 +152,11 @@ a {
       font-weight: 900;
     }
 
+    .pagang-current {
+      color: var(--mustard-yellow);
+      font-weight: 900;
+    }
+
     .menu__list-item--expandable {
       position: relative;
     }
