@@ -726,6 +726,24 @@ footer {
 
 /* ILLUSTRATIONER - UNDERSIDAN */
 
+.masonry {
+  /* Required styles */
+  display: grid;
+  overflow: hidden;
+  /* Optional styles */
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.frame {
+  /* Required styles */
+  aspect-ratio: var(--width) / var(--height);
+
+  & img {
+    width: 100%;
+  }
+}
+
 .outer-container {
   background: var(--light-beige);
 }
